@@ -1,0 +1,26 @@
+.result-container {
+    margin-top: 24px;
+}
+
+.content {
+    margin-top: 24px;
+    padding: 20px 52px 52px 52px;
+    background-color: #368fde;
+    color: #fefefe;
+    height: 100%;
+}
+
+.search-result {
+    margin: 8px;
+    padding: 10px 20px 20px 20px;
+    background-color: #368fde;
+    color: #fefefe;
+    height: 100%;
+}
+
+.result-content {
+    background-color: #fefefe;
+    color: #333;
+    padding: 8px;
+    margin-bottom: 8px;
+}
