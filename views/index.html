@@ -33,38 +33,9 @@
     <script>
         $(document).ready(function () {
 
-            API.getMonumentCount().then(function (count) {
-                $('#monument-count').html(count.total);
-            });
+            // TODO: display monument-count
 
-            $('#search-input').keyup(function () {
-                var value = $(this).val();
-                $('#result-container').html('');
-                if (value) {
-                    API.searchMonumentByName(value).then(function (monuments) {
-
-                        monuments.forEach(function (monument) {
-                            console.log(monument);
-                            $('<div />', {
-                                id: 'search-monument-'+monument.properties.ID,
-                                html: `<div class="row search-result">
-                                    <div class="col-sm-4">
-                                        <img style="width: 100%;" src="${monument.properties.FOTO}" />
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <h3>${monument.properties.BENAMING_NL}</h3>
-                                        <div class="result-content">
-                                            <p>Adres: ${monument.properties.STRAAT_NL}, ${monument.properties.POSTCODE} ${monument.properties.GEMEENTE_NL}</p>
-                                        </div>
-                                    </div>
-                                </div>`,
-                                className: 'row'
-                            }).appendTo('#result-container');
-                        });
-
-                    });
-                }
-            });
+            // TODO: implement search by name
 
         });
     </script>
